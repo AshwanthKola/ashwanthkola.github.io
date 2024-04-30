@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Models</title>
+    <style>
+      .title {
+        align-items: first baseline;
+        background-color: #0b0b08;
+      }
+      .logo {
+        height: 90px ;
+        width: 150px;
+      }
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcff;
+}
+/* Search bar container */
+.search-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .search-container input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #090909;
+            border-radius: 4px;
+        }
+        .header { overflow: hidden; background-color: #0b0909; padding: 10px 0; }
+        .header-center {
+          float:left
+        }
+  .header a { float: left; color: rgb(245, 242, 242); text-align: center; padding: 12px; text-decoration: none; font-size: 18px; line-height: 25px; border-radius: 4px; }
+  .header a.logo { font-size: 25px; font-weight: bold; }
+  .header a:hover { background-color: #070606; color:#eee(252, 248, 248); }
+  .header a.active { background-color: #4CAF50; color: rgb(239, 235, 235); }
+  .header-right { float: right; }
+  .dropdown { float: right;
+  margin-right: 130px; /* This creates a 10px gap on the right */
+   overflow: hidden; }
+  .dropdown .dropbtn { font-size: 18px; border: none; outline: none; color: rgb(246, 242, 242); padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+  .dropdown:hover .dropbtn { background-color: #fdf9f9; color: rgb(8, 7, 7); }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fdf8f8;
+  min-width: 160px;
+  max-width: 250px; /* Set a maximum width */
+  box-shadow: 0px 8px 16px 0px rgba(5, 5, 5, 0.2);
+  z-index: 1;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(5, 4, 4);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  overflow: hidden; /* Ensure the text doesn't overflow */
+  text-overflow: ellipsis; /* Add an ellipsis if the text is too long */
+}
+
+  .dropdown-content a:hover { background-color: #f5f1f1; }
+  .dropdown:hover .dropdown-content { display: block; }
+.carslist {
+            display: ruby;
+    
+
+}
+.cars img {
+            width: 100%;
+            height: 100%;
+            display: grid;
+        }
+
+.cars {
+    border: 1px solid #f5efef;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  .cars:hover {
+    transform: scale(1.05);
+  }
+  .cars img {
+    width: 100%;
+    height: auto;
+  }
+  .cars-details {
+    margin-top: 15px;
+  }
+  .car1-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car1-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car2-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car2-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car3-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car3-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car4-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car4-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car5-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car5-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car6-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car6-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car7-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car7-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car8-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car8-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car9-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car9-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car10-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car10-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car11-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car11-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car12-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car12-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car13-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car13-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car14-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car14-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+  .car15-details h1 {
+    text-align: center;
+    margin: 0;
+    color: #f4f0f0;
+  }
+  .car15-details p {
+    margin: 5px 0;
+    color: #f8f6f6;
+  }
+
+nav {
+    /* Navigation styles */
+}
+
+#about {
+    padding: 2em;
+    background-color: #eee;
+    text-align: center;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.cars {
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.cars img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.car1-details {
+  background-color: rgba(11, 11, 10, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car2-details {
+  background-color: rgba(11, 11, 10, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car3-details {
+  background-color: rgba(6, 6, 6, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car4-details {
+  background-color: rgba(6, 6, 6, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car5-details {
+  background-color: rgba(10, 9, 9, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car6-details {
+  background-color: rgba(11, 11, 11, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car7-details {
+  background-color: rgba(5, 5, 5, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car8-details {
+  background-color: rgba(10, 9, 9, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car9-details {
+  background-color: rgba(11, 11, 11, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car10-details {
+  background-color: rgba(8, 8, 7, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car11-details {
+  background-color: rgba(8, 8, 7, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car12-details {
+  background-color: rgba(9, 8, 8, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car13-details {
+  background-color: rgba(8, 8, 8, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+
+
+.car14-details {
+  background-color: rgba(5, 5, 5, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.car15-details {
+  background-color: rgba(5, 5, 5, 0.8);
+  padding: 10px;
+  margin-top: -10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+          <div class="header-center">
+        <img src="C:\Users\91720\Desktop\FSD project\Cars images\Lam logo.jpg" class="logo" alt="Lamborghini Logo" width="200" height="150">
+        </div>
+        <div class="search-container">
+          <input type="text" id="searchBox" onkeyup="searchPhotos()" placeholder="Search for Lamborghini Models...">
+        <div class="header-right">
+          <div class="dropdown">
+            <button class="dropbtn">Models 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="https://ashwanthkola.github.io/repository/Lamborghini Revuelto.html">Revuelto</a>
+              <a href="">Asterion Concept</a>
+              <a href="">Countach 800-4</a>
+              <a href="">Estoque Concept</a>
+              <a href="">Huracan Evo Spyder</a>
+              <a href="">Huracan Sterrato</a>
+              <a href="">Huracan STO</a>
+              <a href="">Huracan Tecnica</a>
+              <a href="">Sian FKP 37</a>
+              <a href="">Sian Roadster</a>
+              <a href="">Terzo Millennio Concept</a>
+              <a href="">Urus Performante</a>
+              <a href="">Urus S</a>
+              <a href="">Urus SE</a>
+              <a href="">Aventador</a>
+            </div>
+          </div> 
+        </div>
+      </div>  
+        <nav>
+            <!-- Navigation links here -->
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <div class="carslist">
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Revuelto.jpg" alt="Lamborghini Revuelto">
+                </a>
+                <div class="car1-details">
+                    <h1>Lamborghini Revuelto</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Urus-SE.webp" alt="Lamborghini Urus SE">
+                </a>
+                <div class="car14-details">
+                    <h1>Lamborghini Urus SE</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Countach LPI 800-4.jpg" alt="Lamborghini Countach LPI 800-4">
+                </a>
+                <div class="car3-details">
+                    <h1>Lamborghini Countach LPI 800-4</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Estoque.webp" alt="Lamborghini Estoque Concept">
+                </a>
+                <div class="car4-details">
+                    <h1>Lamborghini Estoque Concept</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Huracan Evo Spyder.jpg" alt="Lamborghini Huracan Evo Spyder">
+                </a>
+                <div class="car5-details">
+                    <h1>Lamborghini Huracan Evo Spyder</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Huracan Sterrato.jpg" alt="Lamborghini Huracan Sterrato">
+                </a>
+                <div class="car6-details">
+                    <h1>Lamborghini Huracan Sterrato</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Huracan STO.jpg" alt="Lamborghini Huracan STO">
+                </a>
+                <div class="car7-details">
+                    <h1>Lamborghini Huracan STO</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Huracan Tecnica.webp" alt="Lamborghini Huracan Tecnica">
+                </a>
+                <div class="car8-details">
+                    <h1>Lamborghini Huracan Tecnica</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Sian FKP 37.webp" alt="Lamborghini Sian FKP 37">
+                </a>
+                <div class="car9-details">
+                    <h1>Lamborghini Sian FKP 37</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Sian Roadster.jpg" alt="Lamborghini Sian Roadster">
+                </a>
+                <div class="car10-details">
+                    <h1>Lamborghini Sian Roadster</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Terzo Millennio Concept.jpg" alt="Lamborghini Terzo Millennio Concept">
+                </a>
+                <div class="car11-details">
+                    <h1>Lamborghini Terzo Millennio Concept</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Urus Performante.jpg" alt="Lamborghini Urus Performante">
+                </a>
+                <div class="car12-details">
+                    <h1>Lamborghini Urus Performante</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Urus S.jpg" alt="Lamborghini Urus S">
+                </a>
+                <div class="car13-details">
+                    <h1>Lamborghini Urus S</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Asterion Concept.webp" alt="Lamborghini Asterion Concept">
+                </a>
+                <div class="car2-details">
+                    <h1>Lamborghini Asterion Concept</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+
+
+            <div class="cars">
+              <a href="" target="_blank">
+                <img src="C:\Users\91720\Desktop\FSD project\Cars images\Lamborghini Aventador Ultimate.jpg" alt="Lamborghini Aventador Ultimate">
+                </a>
+                <div class="car15-details">
+                    <h1>Lamborghini Aventador Ultimate</h1>
+                    <p>Price:</p>
+                    <p>Number of Cylinders:</p>
+                    <p>Max Torque:</p>
+                    <p>Max Power:</p>
+                    <p>Year:</p>
+                    <p>Transmission:</p>
+                    <p>Fuel Tank capacity:</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="about">
+            <!-- About Lamborghini -->
+            <h1>AUTOMOBILI LAMBORGHINI COMPANY</h1>
+            <h3>Company Profile</h3>
+
+            <p>Automobili Lamborghini S.p.A.
+
+                Founded in 1963, Automobili Lamborghini is headquartered in Sant’Agata Bolognese, in Northern Italy. 
+                
+                Lamborghini currently produces two super sports car models, the V12-powered Aventador, launched in 2011, and the V10-powered Huracán, launched in 2014, along with the Urus Super SUV powered by a twin-turbo V8 engine, launched in 2017.
+                
+                For over half a century Automobili Lamborghini created a continuous series of dream cars, including the 350 GT, Miura, Espada, Countach, Diablo, and Murciélago, as well as limited editions such as the Reventón, Sesto Elemento, Veneno and the Centenario. With the unveiling in 2019 of the Lamborghini Sián FKP 37, a few-off build of only 63 units, the company delivers unique new hybrid technologies, featuring the world-first application of a supercapacitor for hybridization, new materials technology, and unsurpassed Lamborghini performance.
+                
+                In 2021 Lamborghini dedicated itself to the Countach for its 50th anniversary. A limited and futuristic edition of the super sports car, the iconic Countach LPI 800-4 boasts a revolutionary design and is a technology rule-breaker.</p>
+                
+                <h3>Company data</h3>
+                
+                <p>Automobili Lamborghini S.p.A., with legal seat in S. Agata Bolognese (BO) 40019 Via Modena 12 Italy
+                Business Register of Bologna  no. 259882
+                Share capital duly paid up Euros 130.000.000
+                P Iva 00591801204  Fiscal code 03049840378
+                A sole shareholder company part of Audi Group 
+                Registered email address: automobililamborghini@legalmail.it</p>
+
+                <h3>Headquarters</h3>
+
+                <p>Automobili Lamborghini S.p.A.
+                    Via Modena, 12
+                    40019 Sant’Agata Bolognese (Bologna)
+                    Italy
+                    +39 051 959 7611</p>
+
+                    <h3>Whistleblower System</h3>
+
+                    <p>Respecting the rules is a top priority for Lamborghini. In order to protect our company, our people and our partners, our employees act with compliance and integrity. The Whistleblower System allows to report, even anonymously, potential regulatory violations by Lamborghini employees through several dedicated channels.
+
+                        If you have inquiries regarding vehicles or services provided by Lamborghini or our business partners please contact our Customer Care. The Whistleblower System does not process customer complaints.</p>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content -->
+        <p>© 2024 Lamborghini Models</p>
+    </footer>
+    <script>
+        function searchPhotos() {
+            var input, filter, carslist, cars, img, i, txtValue;
+            input = document.getElementById('searchBox');
+            filter = input.value.toUpperCase();
+            carslist = document.getElementsByClassName('carslist')[0];
+            cars = carslist.getElementsByClassName('cars');
+            for (i = 0; i < cars.length; i++) {
+                img = cars[i].getElementsByTagName('img')[0];
+                txtValue = img.alt || img.src;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    cars[i].style.display="";
+                } else {
+                    cars[i].style.display="none";
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const gallery = document.getElementById('gallery');
+    // Add event listeners and other interactive elements
+});
+
+    </script>
+</body>
+</html>
