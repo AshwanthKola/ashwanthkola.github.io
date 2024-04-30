@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lamborghini Huracan STO</title>
+<style>
+  body { margin: 0; font-family: Arial, sans-serif; }
+  .header { overflow: hidden; background-color: #333; padding: 10px 0; }
+  .header a { float: left; color: white; text-align: center; padding: 12px; text-decoration: none; font-size: 18px; line-height: 25px; border-radius: 4px; }
+  .header a.logo { font-size: 25px; font-weight: bold; }
+  .header a:hover { background-color: #ddd; color: black; }
+  .header a.active { background-color: #4CAF50; color: white; }
+  .header-right { float: right; }
+  .dropdown { float: right;
+  margin-right: 130px; /* This creates a 10px gap on the right */
+   overflow: hidden; }
+  .dropdown .dropbtn { font-size: 18px; border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+  .dropdown:hover .dropbtn { background-color: #ddd; color: black; }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  max-width: 250px; /* Set a maximum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  overflow: hidden; /* Ensure the text doesn't overflow */
+  text-overflow: ellipsis; /* Add an ellipsis if the text is too long */
+}
+
+  .dropdown-content a:hover { background-color: #ddd; }
+  .dropdown:hover .dropdown-content { display: block; }
+  .carname {
+    text-align: center;
+    background-color: rgba(246, 239, 239, 0.732);
+  }
+
+  .video-container {
+    position: relative;
+    width: 640px; /* Adjust as needed */
+    height: 360px; /* Adjust as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Adjust the width as needed */
+  }
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4f5f5;
+    border: none;
+    color: rgb(11, 10, 10);
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .info { padding: 20px; }
+  .footer { background: #333; color: white; padding: 10px 20px; text-align: center; }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#home" class="logo">Lamborghini Models</a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">Models 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Revuelto</a>
+              <a href="#">Asterion Concept</a>
+              <a href="#">Countach 800-4</a>
+              <a href="#">Estoque Concept</a>
+              <a href="#">Huracan Evo Spyder</a>
+              <a href="#">Huracan Sterrato</a>
+              <a href="#">Huracan STO</a>
+              <a href="#">Huracan Tecnica</a>
+              <a href="#">Sian FKP 37</a>
+              <a href="#">Sian Roadster</a>
+              <a href="#">Terzo Millennio Concept</a>
+              <a href="#">Urus Performante</a>
+              <a href="#">Urus S</a>
+              <a href="#">Urus SE</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="carname">
+        <h1>Lamborghini Huracan STO</h1>
+      </div>
+
+      <div class="info">
+          <h1>Introducing...Lamborghini Huracan STO...The Real Storm!</h1>
+        </div>
+      <div class="video-container">
+        <video id="myVideo" preload="auto" loop width="100%" controls poster="C:\Users\91720\Desktop\FSD project\Cars images\Huracan STO.jpg">
+          <source src="C:\Users\91720\Desktop\FSD project\videos\Lamborghini Huracan STO  4K.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button class="play-button" onclick="togglePlay()">Play</button>
+       <!-- This is the play button symbol -->
+        </button>
+        </div>
+        <script>
+          var video = document.getElementById('myVideo');
+        var playButton = document.querySelector('.play-button');
+      
+        function togglePlay() {
+          if (video.paused || video.ended) {
+            video.play();
+            playButton.textContent = 'Pause';
+          } else {
+            video.pause();
+            playButton.textContent = 'Play';
+          }
+        }
+      
+        // Optional: Hide play button on play
+        video.addEventListener('play', function() {
+          playButton.style.display = 'none';
+        });
+      
+        video.addEventListener('pause', function() {
+          playButton.style.display = 'block';
+        });
+      
+        video.addEventListener('ended', function() {
+          video.currentTime = 0;
+          playButton.style.display = 'block';
+          playButton.textContent = 'Play';
+        });
+      
+      </script>
+      
+      <div class="info">
+          <h1>Features:</h1>
+              <p>Engine: 5.2L V10, 10 cylinders in a V shape, 4 valves per cylinder, DOHC, 630 bhp @ 8000 rpm, 565 Nm @ 6500 rpm, petrol</p>
+                <p>Transmission: Automatic (DCT) - 7 gears, paddle shift, sport mode</p>
+                <p>Drivetrain: RWD</p>
+                <p>Top speed: 310 km/h</p>
+                <p>Acceleration: 0-100 km/h (MPH 0-62): 3.0 s</p>
+                <p>Fuel economy combined: 15 mpg</p>
+                <p>Driving range: 575 km</p>
+                <p>Dimensions: Length (mm) 4549, Width (mm) 1945, Height (mm) 1220</p>
+                <p>Seating capacity: 2 people</p>
+                <p>Wheels: Front rims: 8,5J x 20, Rear rims: 11J x 20, Front tires: Bridgestone Potenza Sport 245/30 R20, Rear tires: Bridgestone Potenza Sport 305/30 R20</p>
+                <p>Interior: Lightweight, high-quality materials, including carbon fiber in the door panels, seats, floor mats, and interior details</p>
+                <p>Safety and security: Roll stability control, dynamic steering response, cornering brake control (CBC), location tracking, remote | auto lock (speed sensitive), reversing alarm </p>
+      </div>
+      
+      <div>
+          <h1>Overview:</h1>
+          <p>A super-sports car created with a singular purpose, the Huracán STO delivers all the feel and technology of a genuine race car in a road-legal model.
+            Lamborghini’s years-long motorsport know-how, intensified by a winning heritage, is concentrated in the new Huracán STO. Its extreme aerodynamics, track-honed handling dynamics, lightweight contents and the highest-performing V10 engine to date come together, ready to trigger all the emotions of the racetrack in your everyday life.</p>
+      </div>
+      
+      
+      <div class="footer">
+        <p><p>© 2024 Lamborghini Models</p></p>
+      </div>
+
+</body>
+</html>
